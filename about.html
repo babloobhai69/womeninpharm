@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About | Women in Pharma</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+  font-family:'Inter',sans-serif;
+  background:#fafafa;
+  color:#1f2933;
+  line-height:1.7;
+}
+
+a{text-decoration:none;color:#2e8b8b;font-weight:500;}
+
+/* ================= HEADER ================= */
+
+header{
+  background:#ffffff;
+  padding:8px 40px;
+  position:sticky;
+  top:0;
+  z-index:1000;
+  box-shadow:0 2px 8px rgba(0,0,0,.05);
+}
+
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  max-width:1400px;
+  margin:auto;
+  height:70px;
+}
+
+.nav-left,
+.nav-right{
+  display:flex;
+  gap:28px;
+  list-style:none;
+  align-items:center;
+}
+
+.nav-left li a,
+.nav-right li a{
+  font-size:13.5px;
+  font-weight:500;
+  color:#374151;
+  letter-spacing:0.4px;
+  transition:0.25s ease;
+}
+
+.nav-left li a:hover,
+.nav-right li a:hover{
+  color:#2e8b8b;
+}
+
+/* CENTER LOGO */
+.navbar img{
+  height:172px;
+  width:auto;
+  object-fit:contain;
+  display:block;
+  transition:0.3s ease;
+}
+
+.navbar img:hover{
+  transform:scale(1.05);
+}
+
+/* Hamburger */
+.hamburger{
+  display:none;
+  font-size:26px;
+  background:none;
+  border:none;
+  cursor:pointer;
+}
+
+/* Drawer */
+.drawer{
+  position:fixed;
+  top:0;
+  right:-260px;
+  width:260px;
+  height:100vh;
+  background:#fff;
+  padding:80px 30px;
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+  transition:.35s;
+  z-index:2000;
+}
+
+.drawer.active{right:0;}
+
+/* ================= PAGE ================= */
+
+.page{
+  max-width:1100px;
+  margin:auto;
+  padding:100px 40px 60px;
+}
+
+.page h1{
+  font-family:'Playfair Display',serif;
+  font-size:42px;
+  margin-bottom:30px;
+  color:#2e8b8b;
+}
+
+.page p{
+  font-size:18px;
+  margin-bottom:20px;
+  color:#4b5563;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+  background:#1f2933;
+  color:#d1d5db;
+  padding:60px;
+}
+
+.footer-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:30px;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:900px){
+
+  header{
+    padding:8px 18px;
+  }
+
+  .nav-left,
+  .nav-right{
+    display:none;
+  }
+
+  .hamburger{
+    display:block;
+  }
+
+  .navbar{
+    height:90px;
+  }
+
+  .navbar img{
+    height: 172px;
+  }
+
+  .page{
+    padding:70px 25px;
+  }
+
+  .footer-grid{
+    grid-template-columns:1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <nav class="navbar">
+
+    <!-- LEFT LINKS -->
+    <ul class="nav-left">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="public-health.html">Public Health</a></li>
+    </ul>
+
+    <!-- CENTER LOGO -->
+    <img src="public/images/logo.png" alt="Women in Pharma Logo">
+
+    <!-- RIGHT LINKS -->
+    <ul class="nav-right">
+      <li><a href="research.html">Research</a></li>
+      <li><a href="leadership.html">Leadership</a></li>
+      <li><a href="socialpharmacy.html">Social Pharmacy</a></li>
+      <li><a href="blog.html">Blog</a></li>
+    </ul>
+
+    <button class="hamburger" onclick="toggleDrawer()">☰</button>
+
+  </nav>
+</header>
+
+<!-- MOBILE DRAWER -->
+<div id="mobileDrawer" class="drawer">
+<button onclick="toggleDrawer()">← Back</button>
+<a href="index.html" onclick="toggleDrawer()">Home</a>
+<a href="about.html" onclick="toggleDrawer()">About Us</a>
+<a href="education.html" onclick="toggleDrawer()">Education</a>
+<a href="public-health.html" onclick="toggleDrawer()">Public Health</a>
+<a href="research.html" onclick="toggleDrawer()">Research</a>
+<a href="leadership.html" onclick="toggleDrawer()">Leadership</a>
+<a href="socialpharmacy.html" onclick="toggleDrawer()">Social Pharmacy</a>
+<a href="blog.html" onclick="toggleDrawer()">Blog</a>
+<a href="join.html" onclick="toggleDrawer()">Join</a>
+</div>
+
+<!-- PAGE CONTENT -->
+
+<section class="page">
+
+  <h1>About Women in Pharma</h1>
+  
+  <p>
+  Women in Pharma – Education & Public Health is an initiative dedicated to supporting, educating, and empowering women across pharmacy education, professional practice, research, and public health leadership. We recognize the growing contributions of women within the pharmaceutical and healthcare ecosystem and seek to strengthen their role through structured collaboration, knowledge exchange, and professional development.
+  </p>
+  
+  <p>
+  As healthcare systems evolve and public health challenges become increasingly complex, the role of pharmacy continues to expand beyond traditional practice. Women in Pharma works to ensure that women are not only participants in this transformation, but leaders shaping its direction through education, research, policy engagement, and community impact.
+  </p>
+  
+  <h2 style="margin-top:50px;font-family:'Playfair Display',serif;color:#2e8b8b;">Our Purpose</h2>
+  
+  <p>
+  Our purpose is to create meaningful opportunities for learning, skill development, mentorship, and research collaboration. We aim to address gaps in pharmacy education, healthcare delivery, and public health awareness by fostering a supportive and academically grounded platform for women in pharmacy.
+  </p>
+  
+  <p>
+  Through education and capacity building, research and advocacy initiatives, and leadership-focused engagement, we equip women with the knowledge, confidence, and competencies required to contribute effectively to patient care, healthcare systems, and population health outcomes.
+  </p>
+  
+  <h2 style="margin-top:50px;font-family:'Playfair Display',serif;color:#2e8b8b;">Our Vision</h2>
+  
+  <p>
+  We envision an inclusive and impact-driven ecosystem where women in pharmacy—students, educators, researchers, and practitioners—are empowered to lead, innovate, and influence healthcare systems at both community and policy levels.
+  </p>
+  
+  <p>
+  By strengthening representation, encouraging evidence-based practice, and promoting professional growth, we aim to enhance the visibility and leadership of women within academic institutions, healthcare organizations, research environments, and public health frameworks.
+  </p>
+  
+  <h2 style="margin-top:50px;font-family:'Playfair Display',serif;color:#2e8b8b;">Our Core Focus Areas</h2>
+  
+  <p><strong>Education & Capacity Building:</strong>  
+  Empowering women with structured learning opportunities, mentorship, workshops, and practical exposure that strengthen academic foundations and professional competencies.</p>
+  
+  <p><strong>Research, Policy & Advocacy:</strong>  
+  Generating evidence, examining systemic challenges in pharmacy education and healthcare delivery, and contributing to informed policy discussions that promote gender equity and ethical healthcare systems.</p>
+  
+  <p><strong>Leadership & Professional Development:</strong>  
+  Supporting women in exploring and advancing their careers through guidance, professional development resources, and leadership-oriented engagement.</p>
+  
+  <p><strong>Social Pharmacy & Public Health:</strong>  
+  Highlighting the expanding role of pharmacy in vaccination initiatives, disease prevention, healthcare awareness, and community-based public health efforts.</p>
+  
+  <h2 style="margin-top:50px;font-family:'Playfair Display',serif;color:#2e8b8b;">Our Commitment</h2>
+  
+  <p>
+  Women in Pharma is committed to integrity, collaboration, and evidence-based engagement. We believe that empowering women in pharmacy strengthens healthcare systems, improves patient outcomes, and enhances community well-being.
+  </p>
+  
+  <p>
+  Through collective participation and structured initiatives, we strive to build a professional environment where women in pharmacy can grow academically, lead confidently, and contribute meaningfully to the advancement of healthcare and public health practice.
+  </p>
+  
+  </section>
+  
+</section>
+
+<footer>
+<div class="footer-grid">
+
+<div>
+<h4>Contact</h4>
+<p>Dr. Neelam Singla</p>
+<p>neelams.singla@gmail.com</p>
+<p>+91 9910944889</p>
+</div>
+
+<div>
+<h4>Coordinator</h4>
+<p>Aishwarya Rathore</p>
+<p>rathoreaishwarya6@gmail.com</p>
+<p>7259975108</p>
+</div>
+
+<div>
+<h4>Women in Pharma</h4>
+<p>Empowering women to lead and innovate in healthcare.</p>
+</div>
+
+</div>
+</footer>
+
+<script>
+function toggleDrawer(){
+  document.getElementById("mobileDrawer").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>

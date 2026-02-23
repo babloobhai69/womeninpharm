@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Practice & Public Health | Women in Pharma</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+  font-family:'Inter',sans-serif;
+  background:#fafafa;
+  color:#1f2933;
+  line-height:1.7;
+}
+
+a{text-decoration:none;color:#2e8b8b;font-weight:500;}
+
+/* ================= HEADER ================= */
+
+header{
+  background:#ffffff;
+  padding:8px 40px;
+  position:sticky;
+  top:0;
+  z-index:1000;
+  box-shadow:0 2px 8px rgba(0,0,0,.05);
+}
+
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  max-width:1400px;
+  margin:auto;
+  height:70px;
+}
+
+.nav-left,
+.nav-right{
+  display:flex;
+  gap:28px;
+  list-style:none;
+  align-items:center;
+}
+
+.nav-left li a,
+.nav-right li a{
+  font-size:13.5px;
+  font-weight:500;
+  color:#374151;
+  letter-spacing:0.4px;
+  transition:0.25s ease;
+}
+
+.nav-left li a:hover,
+.nav-right li a:hover{
+  color:#2e8b8b;
+}
+
+/* CENTER LOGO */
+.navbar img{
+  height:172px;
+  width:auto;
+  object-fit:contain;
+  display:block;
+  transition:0.3s ease;
+}
+
+.navbar img:hover{
+  transform:scale(1.05);
+}
+
+/* Hamburger */
+.hamburger{
+  display:none;
+  font-size:26px;
+  background:none;
+  border:none;
+  cursor:pointer;
+}
+
+/* Drawer */
+.drawer{
+  position:fixed;
+  top:0;
+  right:-260px;
+  width:260px;
+  height:100vh;
+  background:#fff;
+  padding:80px 30px;
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+  transition:.35s;
+  z-index:2000;
+}
+
+.drawer.active{right:0;}
+
+/* ================= PAGE ================= */
+
+.page{
+  max-width:1100px;
+  margin:auto;
+  padding:100px 40px 60px;
+}
+
+.page h1{
+  font-family:'Playfair Display',serif;
+  font-size:42px;
+  margin-bottom:25px;
+  color:#2e8b8b;
+}
+
+.page p{
+  font-size:18px;
+  color:#4b5563;
+  margin-bottom:20px;
+}
+
+.page h2{
+  margin-top:40px;
+  font-size:24px;
+  color:#1f2933;
+}
+
+.page ul{
+  margin-top:15px;
+  padding-left:20px;
+  line-height:1.9;
+  color:#4b5563;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+  background:#1f2933;
+  color:#d1d5db;
+  padding:60px;
+  margin-top:60px;
+}
+
+.footer-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:30px;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:900px){
+
+  header{
+    padding:8px 18px;
+  }
+
+  .nav-left,
+  .nav-right{
+    display:none;
+  }
+
+  .hamburger{
+    display:block;
+  }
+
+  .navbar{
+    height:90px;
+  }
+
+  .navbar img{
+    height:170px;
+  }
+
+  .page{
+    padding:70px 25px;
+  }
+
+  .footer-grid{
+    grid-template-columns:1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <nav class="navbar">
+
+    <!-- LEFT LINKS -->
+    <ul class="nav-left">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="public-health.html">Public Health</a></li>
+    </ul>
+
+    <!-- CENTER LOGO -->
+    <img src="public/images/logo.png" alt="Women in Pharma Logo">
+
+    <!-- RIGHT LINKS -->
+    <ul class="nav-right">
+      <li><a href="research.html">Research</a></li>
+      <li><a href="leadership.html">Leadership</a></li>
+      <li><a href="socialpharmacy.html">Social Pharmacy</a></li>
+      <li><a href="blog.html">Blog</a></li>
+    </ul>
+
+    <button class="hamburger" onclick="toggleDrawer()">☰</button>
+
+  </nav>
+</header>
+
+<!-- MOBILE DRAWER -->
+<div id="mobileDrawer" class="drawer">
+<button onclick="toggleDrawer()">← Back</button>
+<a href="index.html" onclick="toggleDrawer()">Home</a>
+<a href="about.html" onclick="toggleDrawer()">About Us</a>
+<a href="education.html" onclick="toggleDrawer()">Education</a>
+<a href="public-health.html" onclick="toggleDrawer()">Public Health</a>
+<a href="research.html" onclick="toggleDrawer()">Research</a>
+<a href="leadership.html" onclick="toggleDrawer()">Leadership</a>
+<a href="socialpharmacy.html" onclick="toggleDrawer()">Social Pharmacy</a>
+<a href="blog.html" onclick="toggleDrawer()">Blog</a>
+<a href="join.html" onclick="toggleDrawer()">Join</a>
+</div>
+
+<section class="page">
+
+  <h1>Practice & Public Health</h1>
+  
+  <p>
+  Women in Pharma recognizes the critical role that pharmacy professionals play in strengthening healthcare delivery systems and advancing public health outcomes. As healthcare challenges evolve—ranging from infectious diseases and vaccination gaps to chronic disease management and health inequities—pharmacists are increasingly positioned at the forefront of community care.
+  </p>
+  
+  <p>
+  This focus area supports women pharmacists and healthcare professionals in leading public health initiatives, community engagement programs, and preventive healthcare efforts. By bridging pharmacy practice with public health priorities, we aim to enhance healthcare accessibility, patient education, and population-level health improvement.
+  </p>
+  
+  <h2>Our Approach</h2>
+  
+  <p>
+  We promote collaborative, community-centered models of care that empower women to contribute meaningfully to health awareness, disease prevention, and healthcare outreach initiatives. Through structured engagement and leadership development, we support women in taking active roles within local, national, and global public health frameworks.
+  </p>
+  
+  <p>
+  By integrating pharmaceutical expertise with public health strategy, we encourage evidence-based interventions that improve patient safety, medication access, and health literacy within communities.
+  </p>
+  
+  <h2>Key Focus Areas</h2>
+  
+  <ul>
+  <li>Community pharmacy outreach and rural health engagement initiatives</li>
+  <li>Health education and disease awareness campaigns</li>
+  <li>Vaccination advocacy and preventive healthcare programs</li>
+  <li>Women-led public health campaigns and community mobilization efforts</li>
+  <li>Collaborative community health screening and awareness drives</li>
+  <li>Public health leadership development for women professionals</li>
+  </ul>
+  
+  <h2>Why It Matters</h2>
+  
+  <p>
+  Public health impact begins at the community level. Women pharmacists often serve as accessible healthcare providers within communities, making them uniquely positioned to influence health behaviors, improve medication safety, and support preventive care.
+  </p>
+  
+  <p>
+  Strengthening women’s participation in public health initiatives contributes to more inclusive healthcare systems, better patient outcomes, and stronger community resilience. Through leadership, outreach, and education, Women in Pharma seeks to enhance the visibility and impact of women in advancing public health priorities.
+  </p>
+  
+  </section>
+  
+<footer>
+<div class="footer-grid">
+
+<div>
+<h4>Contact</h4>
+<p>Dr. Neelam Singla</p>
+<p>neelams.singla@gmail.com</p>
+<p>+91 9910944889</p>
+</div>
+
+<div>
+<h4>Coordinator</h4>
+<p>Aishwarya Rathore</p>
+<p>rathoreaishwarya6@gmail.com</p>
+<p>7259975108</p>
+</div>
+
+<div>
+<h4>Women in Pharma</h4>
+<p>Empowering women to lead healthcare transformation.</p>
+</div>
+
+</div>
+</footer>
+
+<script>
+function toggleDrawer(){
+  document.getElementById("mobileDrawer").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>

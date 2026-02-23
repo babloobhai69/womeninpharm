@@ -1,0 +1,582 @@
+it is still the same <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Women in Pharma</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: #1f2933;
+      background: #fafafa;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: #2e8b8b;
+      font-weight: 500;
+    }
+
+    /* Navbar */
+    header {
+      background: #ffffff;
+      padding: 16px 60px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+    }
+
+    /* Hero Image Section */
+    .hero-image img {
+  width: 100%;
+  max-height: 520px;
+  object-fit: cover;
+  display: block;
+}
+
+    /* Editorial Hero */
+.editorial-hero {
+    padding: 120px 20px 100px;
+    background: #ffffff;
+    text-align: center;
+  }
+  
+  .editorial-content {
+    max-width: 1100px;
+    margin: auto;
+  }
+  
+  /* WOMEN */
+  .line-one {
+    font-family: 'Playfair Display', serif;
+    font-size: 90px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    color: #6b6b6b;
+    margin-bottom: 10px;
+  }
+  
+  /* in */
+  .line-two {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    color: #9aa0a6;
+    display: block;
+    margin-bottom: 20px;
+  }
+  
+  /* PHARMA & PUBLIC HEALTH */
+  .line-three {
+    font-family: 'Inter', sans-serif;
+    font-size: 72px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #2e8b8b;
+    margin-bottom: 40px;
+  }
+  
+  /* Description */
+  .hero-subtext {
+    font-size: 18px;
+    color: #374151;
+    max-width: 750px;
+    margin: 0 auto 30px;
+    line-height: 1.7;
+  }
+  
+  /* Highlight line */
+  .hero-highlight {
+    font-size: 18px;
+    color: #6b7280;
+  }
+  
+  .hero-highlight span {
+    color: #2e8b8b;
+    font-weight: 500;
+  }
+  
+  /* Responsive */
+  @media (max-width: 900px) {
+    .line-one {
+      font-size: 60px;
+    }
+  
+    .line-three {
+      font-size: 42px;
+    }
+  
+    .hero-subtext,
+    .hero-highlight {
+      font-size: 16px;
+    }
+  }
+  
+.hero-image {
+    width: 100%;
+    height: 85vh;
+    background: url("homepagepic.png") center center / cover no-repeat;
+    position: relative;
+  }
+  
+  /* Soft overlay like Anantdhara */
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.92),
+      rgba(255, 255, 255, 0.65),
+      rgba(255, 255, 255, 0.2)
+    );
+    display: flex;
+    align-items: center;
+  }
+  
+  .hero-content {
+    max-width: 650px;
+    padding: 0 60px;
+  }
+  
+  .hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #1f2933;
+  }
+  
+  .hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #374151;
+  }
+  
+  /* Button refinement */
+  .btn {
+    padding: 14px 30px;
+    background: #2e8b8b;
+    color: #ffffff;
+    border-radius: 30px;
+    font-weight: 500;
+    display: inline-block;
+  }
+  
+  /* Responsive */
+  @media (max-width: 900px) {
+    .hero-image {
+      height: 70vh;
+    }
+  
+    .hero-content h1 {
+      font-size: 36px;
+    }
+  
+    .hero-content {
+      padding: 0 30px;
+    }
+  }
+  
+    /* Mission */
+    .mission {
+      padding: 70px 60px;
+      text-align: center;
+      background: #ffffff;
+    }
+
+    .mission h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .mission p {
+      max-width: 850px;
+      margin: auto;
+      font-size: 17px;
+      color: #4b5563;
+    }
+
+    /* Sections */
+    .section {
+      padding: 70px 60px;
+    }
+
+    .section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 30px;
+      margin-bottom: 16px;
+    }
+
+    .section p {
+      max-width: 750px;
+      margin-bottom: 12px;
+      color: #4b5563;
+    }
+
+    .read-more {
+      margin-top: 10px;
+      display: inline-block;
+    }
+
+    /* Stats */
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      padding: 80px 60px;
+      background: #f0f7f7;
+      text-align: center;
+    }
+
+    .stat h3 {
+      font-size: 34px;
+      color: #2e8b8b;
+      margin-bottom: 6px;
+    }
+
+    .stat p {
+      font-size: 15px;
+      color: #374151;
+    }
+
+    /* Join Community */
+    .join {
+      padding: 80px 60px;
+      background: #ffffff;
+      text-align: center;
+    }
+
+    .join h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 34px;
+      margin-bottom: 20px;
+    }
+
+    .join p {
+      max-width: 700px;
+      margin: auto;
+      margin-bottom: 30px;
+      color: #4b5563;
+    }
+
+    /* Footer */
+    footer {
+      background: #1f2933;
+      color: #d1d5db;
+      padding: 60px;
+    }
+
+    footer .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+    }
+
+    footer h4 {
+      margin-bottom: 14px;
+      font-weight: 500;
+      color: #ffffff;
+    }
+
+    footer ul {
+      list-style: none;
+    }
+
+    footer ul li {
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+
+    footer ul li a {
+      color: #d1d5db;
+    }
+
+    .copyright {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 13px;
+      color: #9ca3af;
+    }
+
+    @media(max-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      .stats {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      footer .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+     /* hamburger button */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* mobile drawer */
+.mobile-drawer {
+  position: fixed;
+  top: 0;
+  right: -260px;
+  width: 260px;
+  height: 100vh;
+  background: #ffffff;
+  box-shadow: -2px 0 10px rgba(0,0,0,0.08);
+  padding: 80px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: 0.35s ease;
+  z-index: 2000;
+}
+
+/* drawer open */
+.mobile-drawer.active {
+  right: 0;
+}
+
+/* back button */
+.drawer-close {
+  background: none;
+  border: none;
+  font-size: 18px;
+  margin-bottom: 25px;
+  cursor: pointer;
+  color: #1f2933;
+  text-align: left;
+}
+
+/* MOBILE NAV LOGIC */
+@media (max-width: 900px) {
+
+  nav ul {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  header {
+    padding: 16px 24px;
+  }
+}
+
+/* hide drawer on desktop completely */
+@media (min-width: 901px) {
+  .mobile-drawer {
+    display: none !important;
+  }
+}
+
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+
+    <nav>
+      <div class="logo">Women in Pharma</div>
+  
+      <!-- Hamburger -->
+      <button class="menu-toggle" onclick="toggleDrawer()">☰</button>
+  
+      <ul>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#practice">Public Health</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#mission">Mission</a></li>
+        <li><a href="#join">Join</a></li>
+      </ul>
+    </nav>
+  
+  </header>
+  
+  <div id="mobileDrawer" class="mobile-drawer">
+
+    <button class="drawer-close" onclick="toggleDrawer()">← Back</button>
+  
+    <a href="#education" onclick="toggleDrawer()">Education</a>
+    <a href="#practice" onclick="toggleDrawer()">Public Health</a>
+    <a href="#research" onclick="toggleDrawer()">Research</a>
+    <a href="#mission" onclick="toggleDrawer()">Mission</a>
+    <a href="#join" onclick="toggleDrawer()">Join</a>
+  
+  </div>
+  
+  
+<section class="editorial-hero">
+    <div class="editorial-content">
+      <h1 class="line-one">WOMEN</h1>
+      <span class="line-two">in</span>
+      <h2 class="line-three">PHARMA & PUBLIC HEALTH</h2>
+  
+      <p class="hero-subtext">
+        Building a collaborative movement to strengthen women’s leadership,
+        education, research, and community impact in pharmacy and healthcare.
+      </p>
+  
+      <p class="hero-highlight">
+        We are a <span>community</span>, a <span>career support platform</span>,
+        and a <span>collective voice</span>.
+      </p>
+    </div>
+  </section>
+
+  <section class="hero-image">
+    <img src="public/images/homepagepic.png" alt="Women in Pharma illustration">
+  </section>
+  
+  
+
+<section id="mission" class="mission">
+  <h2>Our Mission</h2>
+  <p>
+    To uplift, support, and amplify women in pharmacy by fostering inclusive
+    education, impactful research, professional growth, and public health leadership.
+  </p>
+</section>
+
+<section id="education" class="section">
+  <h2>Education & Training</h2>
+  <p>
+    Supporting pharmacy education innovation, leadership development,
+    mentorship, and academic growth for women at every stage.
+  </p>
+  <a href="education.html" class="read-more">Read More →</a>
+</section>
+
+<section id="practice" class="section">
+  <h2>Practice & Public Health</h2>
+  <p>
+    Strengthening community healthcare through women-led pharmacy initiatives
+    and public health programs.
+  </p>
+  <a href="public-health.html" class="read-more">Read More →</a>
+</section>
+
+<section id="research" class="section">
+  <h2>Research & Insights</h2>
+  <p>
+    Advancing evidence-based pharmacy practice through research,
+    publications, and policy insights.
+  </p>
+  <a href="research.html" class="read-more">Read More →</a>
+</section>
+
+<section class="stats">
+  <div class="stat">
+    <h3>500+</h3>
+    <p>Women Supported</p>
+  </div>
+  <div class="stat">
+    <h3>50+</h3>
+    <p>Mentors & Educators</p>
+  </div>
+  <div class="stat">
+    <h3>20+</h3>
+    <p>Health Initiatives</p>
+  </div>
+  <div class="stat">
+    <h3>10+</h3>
+    <p>Research Collaborations</p>
+  </div>
+</section>
+
+<section id="join" class="join">
+  <h2>Join Our Community</h2>
+  <p>
+    Be part of a growing network of women shaping the future of pharmacy,
+    public health, and healthcare leadership.
+  </p>
+  <a href="join.html" class="btn">Get Involved</a>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <h4>Women in Pharma</h4>
+      <p>Empowering women to lead, innovate, and transform healthcare.</p>
+    </div>
+
+    <div>
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="#">Education & Training</a></li>
+        <li><a href="#">Public Health</a></li>
+        <li><a href="#">Research</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4>Get Involved</h4>
+      <ul>
+        <li><a href="#">Volunteer</a></li>
+        <li><a href="#">Mentorship</a></li>
+        <li><a href="#">Partnerships</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4>Connect</h4>
+      <ul>
+        <li>Email</li>
+        <li>LinkedIn</li>
+        <li>Instagram</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="copyright">
+    © 2026 Women in Pharma. All rights reserved.
+  </div>
+</footer>
+
+<script>
+  function toggleDrawer() {
+    document.getElementById("mobileDrawer").classList.toggle("active");
+  }
+  </script>
+  
+  
+
+</body>
+</html>   take my whole code and fix and give me to copy paste please i just have 5 mins 
